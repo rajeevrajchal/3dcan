@@ -5,16 +5,13 @@ import { $FIX_ME } from "../../types/fix_me";
 const CanTexture: React.FC<{ can: $FIX_ME }> = ({ can }: $FIX_ME) => {
   useEffect(() => {
     const textureLoader = new THREE.TextureLoader();
-    const skateTexture = textureLoader.load(
-      "src/assets/skate.gif",
-      (texture) => {
-        texture.wrapS = THREE.RepeatWrapping;
-        texture.wrapT = THREE.RepeatWrapping;
-        texture.offset.set(0, 0.2); // Move the texture position
-        texture.repeat.set(1, 1); // Repeat the texture
-        texture.rotation = Math.PI / 2; // Rotate the texture 45 degrees
-      }
-    );
+    const skateTexture = textureLoader.load("/skate.gif", (texture) => {
+      texture.wrapS = THREE.RepeatWrapping;
+      texture.wrapT = THREE.RepeatWrapping;
+      texture.offset.set(0, 0.2); // Move the texture position
+      texture.repeat.set(1, 1); // Repeat the texture
+      texture.rotation = Math.PI / 2; // Rotate the texture 45 degrees
+    });
 
     // Apply the skate texture to the can material
     can.scene.traverse((child: $FIX_ME) => {

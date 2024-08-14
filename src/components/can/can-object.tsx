@@ -8,7 +8,7 @@ const CanObject = () => {
       <ambientLight />
       <directionalLight position={[-12, 80, 20]} intensity={1} />
       <primitive object={can.scene} scale={10} position={[0, -1.25, -0.5]} />
-      {/* Apply skate.gif as texture */}
+      {/* Apply skate.gif as texture, uncomment to check the texture */}
       {/* <CanTexture can={can} /> */}
     </mesh>
   );
