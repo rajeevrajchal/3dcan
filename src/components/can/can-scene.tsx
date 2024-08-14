@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
-import { CameraControls, Center, OrbitControls } from "@react-three/drei";
+import { Center, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import SkateBackground from "../skate-background";
 import CanObject from "./can-object";
@@ -32,8 +32,7 @@ const CanScene = () => {
       </Center>
       <SkateBackground />
 
-      <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={3} />
-      <CameraControls />
+      <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={10} />
     </Canvas>
   );
 };
