@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { Center, useVideoTexture } from "@react-three/drei";
 import { MeshProps } from "@react-three/fiber";
 import React, { useMemo } from "react";
