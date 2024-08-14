@@ -1,7 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 
 const CanObject = () => {
-  const can = useGLTF("src/assets/can/scene.gltf");
+  const can = useGLTF("/can/scene.gltf");
 
   return (
     <mesh castShadow position={[0, 0, 0]}>

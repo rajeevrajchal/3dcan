@@ -62,7 +62,7 @@ export function CurvedPlane({
 }
 
 const SkateBackground: React.FC<MeshProps> = () => {
-  const texture = useVideoTexture("src/assets/skate.mp4");
+  const texture = useVideoTexture("/skate.mp4");
   texture.wrapS = THREE.RepeatWrapping;
   texture.wrapT = THREE.RepeatWrapping;
   texture.repeat.x = -1;
