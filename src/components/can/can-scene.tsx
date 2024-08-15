@@ -16,8 +16,6 @@ const CanScene = () => {
       <Center bottom>
         <CanObject />
       </Center>
-      {/* <SkateBackground /> */}
-
       <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={10} />
     </Canvas>
   );

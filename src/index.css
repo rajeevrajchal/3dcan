@@ -10,10 +10,68 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  display: flex;
+}
+.environment {
+  display: flex;
+  flex: 1;
+}
+
+.action_group {
+  display: flex;
+  border-left: 1px solid gray;
+  flex-direction: column;
+  width: 200px;
+  padding: 8px;
+  gap: 12px;
+}
+
+.action_group_button {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 8px;
+  gap: 8px;
+}
+.texture {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.texture_select {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
 }
 
 .scrolling_area {
   height: 200vh;
+}
+
+.checkbox {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-transform: capitalize;
+  transition: background 0.3s ease, filter 0.3s ease; /* Smooth transition for background and filter */
+}
+
+.active {
+  background: #3498db;
+  color: #fff;
+}
+
+button:hover {
+  filter: brightness(0.8);
 }
 
 canvas {
